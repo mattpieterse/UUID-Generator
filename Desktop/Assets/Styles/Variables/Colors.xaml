@@ -1,0 +1,16 @@
+<ResourceDictionary
+    xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml" >
+
+    <!-- BACKGROUND -->
+
+    <SolidColorBrush
+        x:Key = "Surface"
+        Color = "#F6F6F6" />
+
+    <!-- FOREGROUND -->
+
+    <SolidColorBrush
+        x:Key = "Error"
+        Color = "#C42B1C" />
+</ResourceDictionary>
