@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Assets\" />
       <Folder Include="Core\" />
       <Folder Include="MVVM\Models\" />
       <Folder Include="MVVM\ViewModels\" />
@@ -21,6 +20,13 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Icons\appicon.ico" />
+      <Content Include="Assets\Icons\appicon.ico">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
