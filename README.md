@@ -1,4 +1,9 @@
-# Evidence Portfolio
+# UUID-Generator (WPF)
+
+Windows Presentation Foundation (WPF) Application written in C# (.NET Core 8) to generate a range of industry standard unique identifiers for your projects.
+
+- Globally Unique Identifier (GUID)
+- UUID (v1, v4, v7 - New)
 
 ## Quick start
 
