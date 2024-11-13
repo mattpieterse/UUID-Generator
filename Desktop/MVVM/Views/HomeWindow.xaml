@@ -6,7 +6,77 @@
     xmlns:c = "http://schemas.openxmlformats.org/markup-compatibility/2006"
     c:Ignorable = "d"
     Title = "UUID Generator"
+    Icon = "../../Assets/Icons/appicon.ico"
+    WindowStartupLocation = "CenterScreen"
+    ResizeMode = "CanMinimize"
     Height = "600"
     Width = "400" >
-    <Grid />
+
+    <Grid
+        Background = "{StaticResource Surface}" >
+
+        <!-- Interface -->
+
+        <Grid
+            Margin = "12" >
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height = "Auto" />
+                <RowDefinition
+                    Height = "*" />
+                <RowDefinition
+                    Height = "Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Controller Bar -->
+
+            <Grid
+                Grid.Row = "0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width = "2*" />
+                    <ColumnDefinition
+                        Width = "4*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid
+                    Grid.Column = "0"
+                    Margin = "0,0,3,0" >
+                    <TextBox
+                        Text = "1"
+                        Style = "{StaticResource TbxStandard}" />
+                </Grid>
+
+                <Grid
+                    Grid.Column = "1"
+                    Margin = "3,0,0,0" >
+                    <Button
+                        x:Name = "GenerateButton"
+                        Content = "Generate UUID"
+                        Style = "{StaticResource BtnAccent}" />
+                </Grid>
+            </Grid>
+
+            <!-- Content Panels -->
+
+            <Grid
+                Grid.Row = "1"
+                Margin = "0,6" >
+                <ListView
+                    x:Name = "OptionList"
+                    SelectionMode = "Single" />
+            </Grid>
+
+            <!-- Navigation Bar -->
+
+            <Grid
+                Grid.Row = "2" >
+                <Label
+                    Content = "github.com/mattpieterse"
+                    Foreground = "LightGray"
+                    HorizontalAlignment = "Center"
+                    FontWeight = "Medium" />
+            </Grid>
+        </Grid>
+    </Grid>
 </Window>
